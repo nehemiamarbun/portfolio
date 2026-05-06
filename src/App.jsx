@@ -736,13 +736,40 @@ const App = () => {
           ))}
         </nav>
 
-        <div className="p-12 border-t border-zinc-900">
-           <div className="flex gap-4 mb-8">
-              <a href="https://www.linkedin.com/in/nehemia-cristiano-marbun-b484621b7/" className="w-10 h-10 flex items-center justify-center bg-[#262626] rounded-xl text-slate-500 hover:text-emerald-300 transition-all border border-zinc-800"><Linkedin size={22}/></a>
-              <a href="mailto:nehemiamarbun00@gmail.com" className="w-10 h-10 flex items-center justify-center bg-[#262626] rounded-xl text-slate-500 hover:text-emerald-300 transition-all border border-zinc-800"><Mail size={22}/></a>
-           </div>
-           <p className="text-[9px] text-zinc-300 font-mono tracking-[0.12em] uppercase"> © 2026 Nehemia Cristiano Marbun</p>
-        </div>
+
+       <div className="mt-auto border-t border-zinc-800 px-8 py-8 flex flex-col items-center text-center">
+
+  {/* Title */}
+  <p className="text-xs font-semibold tracking-[0.25em] text-slate-400 mb-5">
+    LET'S CONNECT
+  </p>
+
+  {/* Social */}
+  <div className="flex justify-center gap-4 mb-6">
+
+    <a
+      href="https://linkedin.com/in/username"
+      target="_blank"
+      className="w-12 h-12 rounded-xl bg-[#2a2a2a] border border-zinc-700 flex items-center justify-center text-slate-300 hover:text-emerald-300 hover:border-emerald-500/30 hover:-translate-y-1 transition-all"
+    >
+      <Linkedin size={20} />
+    </a>
+
+    <a
+      href="mailto:email@gmail.com"
+      className="w-12 h-12 rounded-xl bg-[#2a2a2a] border border-zinc-700 flex items-center justify-center text-slate-300 hover:text-emerald-300 hover:border-emerald-500/30 hover:-translate-y-1 transition-all"
+    >
+      <Mail size={20} />
+    </a>
+
+  </div>
+
+  {/* Copyright */}
+  <p className="text-[10px] tracking-[0.2em] text-slate-500 uppercase">
+    © 2026 • Nehemia Cristiano Marbun
+  </p>
+
+</div>
       </aside>
 
       {/* Main Container */}
